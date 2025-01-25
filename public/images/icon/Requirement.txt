@@ -1,0 +1,4 @@
+1) Need to find any icon (svg), with size:150 x 150 px, transparent background, with white color FFFFFF
+
+2) Need to find at header logo also with Dog Cartoon portriat on upper left hand side of Nav bar
+

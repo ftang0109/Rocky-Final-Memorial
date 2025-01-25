@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rocky Biography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--For youtube logo font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet"> <!--For Google front-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Need to do some prototype with Bootstrap, Javascript, JQuery, node.js-->
+</head>
+<body>
+
+<div class="wrapper">
+
+<!--Nav Bar Section-->
+<section id="topnavbar">
+    <nav class="navbar navbar-expand-sm rocky-bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./images/icon/dog_logo_icon2.png" alt="Dog Logo Icon" class="navbar-header-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./biography.html">Biography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery">Gallery</a>
+              </li>
+                       
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+</section>
+
+<!--Main Content Section-->
+<section id="maincontent">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5 biographytext" id="biographysectionmargin">
+    <div class="col-lg-6">
+      <ul>
+        <li>Name: Rocky</li>
+        <li>中文名: 鄧洛奇</li>
+        <li>Nick Name: Little Brother</li>
+        <li>中文別名: 阿弟,阿B,細佬</li>
+        <li>Age: 18 years old</li>
+        <li>年齡： 18歲</li>
+        <li>Dog Breed: Pomeranian</li>
+        <li>狗品種: 博美/松鼠</li>
+      </ul>
+    </div>
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="./images/biography/biography.jpg" class="d-block mx-lg-auto img-fluid" alt="Biography Picture" width="400" height="500" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!--Footer-->
+<section id="footer">
+  <div class="container-fluid rocky-bg-body-tertiary">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+      <p class="col-md-4 mb-0">© 2025 Fred Tang</p>
+  
+      <a href="./index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="./images/icon/dog_logo_icon2.png" alt="Dog Logo Icon" class="navbar-header-logo">
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-center">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2">Home</a></li>
+        <li class="nav-item"><a href="./biography.html" class="nav-link px-2 active" aria-current="page">Biography</a></li>
+        <li class="nav-item"><a href="./gallery" class="nav-link px-2">Gallery</a></li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

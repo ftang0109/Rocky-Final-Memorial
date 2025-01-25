@@ -1,0 +1,231 @@
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+/* always make top nav bar section stick to top while user scrolling through content*/
+#topnavbar { 
+    position: sticky; 
+    top:0;
+}
+
+/*used to test if there is a border overlap on navbar,main content, footer section to cause crash*/
+/* #navbar,#footer,#maincontent{
+    background-color: red;
+}*/
+
+/* Update the nav bar css background color */
+.rocky-bg-body-tertiary {
+    background-color: rgba(146,121,80,255);
+}
+
+/* Update the nav item horizontal alignment*/
+.navbar-nav {
+
+    padding-left: 35%;
+}
+
+/*Update the topnavbar section font family as Youtube San */
+#topnavbar{
+    font-family: 'Pathway Gothic One', sans-serif;
+    /*padding-left:1rem;*/
+    font-size:2rem;
+    font-weight:600;
+    
+}
+
+/*update the default font color for top nav links */
+.nav-link{
+
+    /*color: #000036; */
+    color:#FFFFFF;
+    
+}
+
+/*update the default font color for top nav links when hover */
+.nav-link:hover{
+    /*color:#0000fa;*/
+    color:#cbbba0;
+    text-shadow: 2px 2px 1px black;
+    
+}
+
+/*update the default font color for top nav links when this active*/
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+   /*color: #000022;*/
+   color: #392f1f;
+   font-weight: bold;
+}
+
+/*change the nav-bar toggler button border color*/
+.navbar-toggler {
+
+    border: var(--bs-border-width) solid #392f1f;
+}
+
+/*change the nav-bar toggle button icon*/
+.navbar-toggler-icon{
+
+width: 1.5em;
+height: 1.5em;
+
+background-image: url("./images/icon/black_dog_paw_icon.png");
+
+}
+
+/*Add top left header logo*/
+.navbar-header-logo{
+
+    height:80px;
+    width:80px;
+    margin: 10px;
+}
+
+/* enlarge logo if there is mouse over-no need anymore since have found a better workaround*/
+/*
+.enlargelogo{
+    height:100px;
+    width:100px;
+    margin:0px;
+    transition-duration: .1s;
+    
+}*/
+
+/* Memorial text front used in home landing page */
+.memorialtext{
+
+    font-family: "Luxurious Roman", serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+
+#memorial-picture{
+
+    width:400px; 
+    height:500px;
+}
+
+
+/*Biography text front used in Biography page*/
+.biographytext{
+
+    font-family: "Luxurious Roman", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: normal;
+
+}
+
+.biographytext ul{
+
+    list-style-type: none;
+}
+
+/*turn the margin-left and right to 0, so that mobile device can work*/
+#biographysectionmargin{
+
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* some carousel css adjustment below */
+
+.carousel-custom-masterout{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    margin-top: 3.25rem;
+    margin-bottom: 3.25rem;
+}
+
+.carousel-custom-outer {
+
+    /*set it as 60% of windows size*/
+    /*border: 1px solid black; this CSS would be use for troubleshooting
+    Also, don't ever change any related to class .carousel-item that one is related to animate and swap picture purpose.
+    */ 
+    display:block;
+}
+
+
+
+.carousel-item img{
+/* orginally set:300 x 500 px*/    
+    width: 300px; /* set as 100% of outer */
+    height: 500px;
+    /*border: 1px solid red;*/
+}
+
+#carouselphotomodal{
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 520px;
+    z-index:6;
+    background-image: url('./images/carousel/2.jpg');
+    background-size: 320px 520px; /*used to specify background image size*/
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+
+
+/*adjust the css if screen is less than 770 px width to fix certain iphone screen issue e.g. iphone SE.*/
+@media (max-width: 770px){
+    .navbar-nav{
+
+        padding-left: 10%;
+    }
+}
+
+/*adjust the css if screen is less than 500 px width*/
+@media (max-width: 500px){
+
+    #memorial-picture{
+
+        width:300px; 
+    }
+  
+    .biographytext{
+
+        font-size: 1.5rem;
+          
+    }
+}
+
+
+
+
+
+/*setup the font family for foot nav link*/
+#footer .nav-link{
+
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding-left:1rem;
+    font-size:2rem;
+    font-weight:300;
+
+}
+
+/* For footer active link setting */
+#footer .nav-link.active {
+    /*color: #000022;*/
+    color: #392f1f;
+    font-weight: bold;
+ }
+
+ /* make the footer p to have padding left*/
+ #footer p{
+
+    padding-left: 5rem;
+    color:#FFFFFF;
+    font-size:1rem;
+    font-weight: bold;
+ }
+
